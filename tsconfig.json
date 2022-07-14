@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",   // как будут генерироваться модули
+    "target": "ESNext",
+    "noImplicitAny": true,  // нельзя использовать any
+    "removeComments": true, // удалять комментарии
+    "outDir": "dist"        // весь результат компиляции положить в папку dist
+  },
+  "include": [
+    "src/**/*"      // компилировать все файлы во всех директориях в директории src
+  ],
+  "exclude": [
+    "node_modules", // не компилировать содержимое директории node_modules
+    "**/*.spec.ts"  // не компилировать файлы с расширением spec.ts
+  ]
+ }
+ 
